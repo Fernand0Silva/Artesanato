@@ -5,3 +5,4 @@ vercel.json
 .vscode/
 .github/
 .middlewares/
+.README.json/
