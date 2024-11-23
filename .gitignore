@@ -1,9 +1,9 @@
-/node_modules/
-/uploads/
+node_modules/
+uploads/
 .env
 index.js
 vercel.json
 .vscode/
 .github/
 /middlewares/
-.README.json
+*.md
