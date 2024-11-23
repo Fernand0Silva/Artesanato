@@ -1,8 +1,9 @@
 /node_modules/
-/uploads/.env
+/uploads/
+.env
 index.js
 vercel.json
 .vscode/
 .github/
-.middlewares/
-.README.json/
+/middlewares/
+.README.json
