@@ -1,0 +1,685 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #8f593e, #914f3e);}
+.conteiner {
+    width: 21%;
+    height: 45vh; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border:solid 2px;
+    border-radius:7%;
+    background-color: white;
+}
+.titulo{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    padding: 9px; 
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -3px;
+}
+.tel-senha{
+    border: none;        
+    outline: none;       
+    position: relative;
+    border-bottom: 1px solid #020202fd; 
+    margin-right: 9vw;
+    
+}
+#telefone{
+    width: 18vw;
+    position: relative;
+    left: 1rem;
+    top: 9px;
+   
+}
+#senha{
+    width: 18vw;
+    position: relative;
+    left: 1rem;
+    top: 3vw;
+}
+#link-senha{
+    position: relative;
+    left: 7rem;
+    text-decoration: none;
+}
+#semConta{
+    text-decoration: none;   
+    position: relative;
+    top: 9.9vw;
+    left: 1rem;
+    
+}
+input::placeholder{
+    font-size: 20px;
+}
+#link-semConta{
+    text-decoration: none;   
+    position: relative;
+    top: 0.vw;
+    left: 0.8rem;
+}
+#botao-login{
+    width: 50%;
+    height: 24%;
+    position: relative;
+    top: 1vw;
+    left: 4vw;
+    background-color:gray;
+    font-size: 30px;
+    color: white;
+    border:solid 1px;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+.bloco{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+}
+#linkHome{
+    
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 30px;
+    font-size: 15px;
+}
+button:hover{
+    background-color: gray;
+    color: black;
+}
+button:active{
+    background-color: chocolate;
+    color: black;
+}
+
+@media(min-width:360px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        
+        
+    }
+    .titulo{
+        position: absolute; 
+        top: 10px; 
+        padding: 9px; 
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: -3px;
+    }
+    .conteiner {
+        width: 70%;
+        height: 55vh; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        position: absolute; 
+        top: 50%; 
+        left: 53%; 
+        transform: translate(-50%, -50%); 
+        border:solid 2px;
+        border-radius:20px;
+    }
+    
+    .tel-senha{
+        border: none;  
+        outline: none;      
+        border-bottom: 1px solid #020202fd; 
+        
+    }
+    #telefone{
+        width: 90%;
+        position: absolute;
+        right: 80px;
+        top: 90px;
+       
+    }
+    #senha{
+        width: 90%;
+        position: absolute;
+        right: 80px;
+        top: 45%;
+    }
+    #link-senha{
+        position: relative;
+        left: 1rem;
+        top: 30px;
+        text-decoration: none;
+    }
+    #semConta{
+        text-decoration: none;   
+        position: relative;
+        top: 40vw;
+        left: -39%;
+    }
+   
+    #link-semConta{
+        text-decoration: none;   
+        position: relative;
+        top: -17px;
+        left: 93%;
+    }
+    #botao-login{
+        width: 63%;
+        height: 38%;
+        position: relative;
+        top: 40px;
+        left: -10px;
+        background-color: gray;
+        font-size: 30px;
+        color: white;
+        border:solid 1px;
+        border-radius: 50px;
+        text-align: center;
+        
+    }
+    .bloco{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30%;
+    }
+    #linkHome{
+        
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        margin: 30px;
+        font-size: 15px;
+    }
+    button:hover{
+        background-color: gray;
+        color: black;
+    }
+    button:active{
+        background-color: chocolate;
+        color: black;
+    }
+
+}
+
+@media(min-width:500px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        
+        
+    }
+    .titulo{
+        position: absolute; 
+        top: 10px; 
+        padding: 9px; 
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: -3px;
+    }
+    .conteiner {
+        width: 85%;
+        height: 55vh; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        position: absolute; 
+        top: 50%; 
+        left: 53%; 
+        transform: translate(-50%, -50%); 
+        border:solid 2px;
+        border-radius:7%;
+    }
+    
+    .tel-senha{
+        border: none;  
+        outline: none;      
+        border-bottom: 1px solid #020202fd; 
+        
+    }
+    #telefone{
+        width: 90%;
+        position: absolute;
+        right: 80px;
+        top: 80px;
+       
+    }
+    #senha{
+        width: 90%;
+        position: absolute;
+        right: 80px;
+        top: 49%;
+    }
+    #link-senha{
+        position: relative;
+        left: 1rem;
+        top: 30px;
+        text-decoration: none;
+    }
+    #semConta{
+        text-decoration: none;   
+        position: relative;
+        top: 30vw;
+        left: 40px;
+    }
+   
+    #link-semConta{
+        text-decoration: none;   
+        position: relative;
+        top: 0px;
+        left: 15%;
+    }
+    #botao-login{
+        width: 63%;
+        height: 38%;
+        position: relative;
+        top: 40px;
+        left: -10px;
+        background-color: gray;
+        font-size: 30px;
+        color: white;
+        border:solid 1px;
+        border-radius: 50px;
+        text-align: center;
+        
+    }
+    .bloco{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30%;
+    }
+    #linkHome{
+        
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        margin: 30px;
+        font-size: 15px;
+    }
+    button:hover{
+        background-color: gray;
+        color: black;
+    }
+    button:active{
+        background-color: chocolate;
+        color: black;
+    }
+
+}
+
+@media(min-width:619px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      
+    }
+    .titulo{
+        position: absolute; 
+        top: 10px; 
+        padding: 9px; 
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: -3px;
+    }
+    .conteiner {
+        width: 80%;
+        height: 55vh; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        position: absolute; 
+        top: 50%; 
+        left: 53%; 
+        transform: translate(-50%, -50%); 
+        border:solid 2px;
+        border-radius:7%;
+    }
+    
+    .tel-senha{
+        border: none;  
+        outline: none;      
+        border-bottom: 1px solid #020202fd; 
+        
+    }
+    #telefone{
+        width: 90%;
+        position: absolute;
+        right: 80px;
+        top: 80px;
+       
+    }
+    #senha{
+        width: 90%;
+        position: absolute;
+        right: 80px;
+        top: 49%;
+    }
+    #link-senha{
+        position: relative;
+        left: 1rem;
+        top: 30px;
+        text-decoration: none;
+    }
+    #semConta{
+        text-decoration: none;   
+        position: relative;
+        top: 20vw;
+        left: -39%;
+    }
+   
+    #link-semConta{
+        text-decoration: none;   
+        position: relative;
+        top: 0px;
+        left: 1%;
+    }
+    #botao-login{
+        width: 63%;
+        height: 38%;
+        position: relative;
+        top: 40px;
+        left: -10px;
+        background-color: rgb(39, 171, 233);
+        font-size: 30px;
+        color: white;
+        border:solid 1px;
+        border-radius: 50px;
+        text-align: center;
+        
+    }
+    .bloco{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30%;
+    }
+    #linkHome{
+        
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        margin: 30px;
+        font-size: 15px;
+    }
+    button:hover{
+        background-color: gray;
+        color: black;
+    }
+    button:active{
+        background-color: chocolate;
+        color: black;
+    }
+
+}
+@media(min-width:719px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+    .titulo{
+        position: absolute; 
+        top: 10px; 
+        left: 20px;
+        padding: 10px; 
+        font-weight: bold;
+        font-size: 31px;
+        margin-top: -7px;
+    }
+    .conteiner {
+        width: 60%;
+        height: 55vh; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        position: absolute; 
+        top: 50%; 
+        left: 53%; 
+        transform: translate(-50%, -50%); 
+        border:solid 2px;
+        border-radius:7%;
+    }
+    
+    .tel-senha{
+        border: none;  
+        outline: none;      
+        border-bottom: 1px solid #020202fd; 
+        
+    }
+    #telefone{
+        width: 90%;
+        position: absolute;
+        right: 80px;
+        top: 80px;
+       
+    }
+    #senha{
+        width: 90%;
+        position: absolute;
+        right: 80px;
+        top: 49%;
+    }
+    #link-senha{
+        position: relative;
+        left: 1rem;
+        top: 30px;
+        text-decoration: none;
+    }
+    #semConta{
+        text-decoration: none;   
+        position: relative;
+        top: 17vw;
+        left: -39%;
+    }
+   
+    #link-semConta{
+        text-decoration: none;   
+        position: relative;
+        top: 0px;
+        left: 1%;
+    }
+    #botao-login{
+        width: 63%;
+        height: 38%;
+        position: relative;
+        top: 40px;
+        left: -10px;
+        background-color: rgb(39, 171, 233);
+        font-size: 30px;
+        color: white;
+        border:solid 1px;
+        border-radius: 50px;
+        text-align: center;
+        
+    }
+    .bloco{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30%;
+    }
+    #linkHome{
+        
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        margin: 30px;
+        font-size: 15px;
+    }
+    button:hover{
+        background-color: gray;
+        color: black;
+    }
+    button:active{
+        background-color: chocolate;
+        color: black;
+    }
+
+}
+@media(min-width:1024px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+          
+    }
+    
+    .conteiner {
+        width: 40%;
+        height: 55vh; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        position: absolute; 
+        top: 50%; 
+        left: 53%; 
+        transform: translate(-50%, -50%); 
+        border:solid 2px;
+        border-radius:20px;
+    }
+    .titulo{
+        position: absolute; 
+        top: 10px; 
+        left: 10px; 
+        padding: 9px; 
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: -3px;
+    }
+    .tel-senha{
+        border: none;        
+        outline: none;       
+        position: relative;
+        border-bottom: 1px solid #020202fd; 
+        margin-right: 9vw;
+        
+    }
+    #telefone{
+        width: 30vw;
+        position: relative;
+        left: -28px;
+        top: -20px;
+       
+    }
+    #senha{
+        width: 30vw;
+        position: relative;
+        left: -28px;
+        top: 3vw;
+    }
+    #link-senha{
+        position: relative;
+        left: 7rem;
+        text-decoration: none;
+    }
+    #semConta{
+        text-decoration: none;   
+        position: relative;
+        top: 11vw;
+        left: 1rem;
+        
+    }
+    input::placeholder{
+        font-size: 20px;
+    }
+    #link-semConta{
+        text-decoration: none;   
+        position: relative;
+        top: 0px;
+        left: 0.8rem;
+    }
+    #botao-login{
+        width: 50%;
+        height: 33%;
+        position: relative;
+        top: 5vw;
+        left: 4vw;
+        background-color: rgb(39, 171, 233);
+        font-size: 30px;
+        color: white;
+        border:solid 1px;
+        border-radius: 50px;
+        text-align: center;
+        
+    }
+    .bloco{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30%;
+    }
+    #linkHome{
+        
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        margin: 30px;
+        font-size: 15px;
+    }
+    button:hover{
+        background-color: rgb(182, 176, 176);
+        color: black;
+    }
+    button:active{
+        background-color: chocolate;
+        color: black;
+    }
+}
+
+
+
+

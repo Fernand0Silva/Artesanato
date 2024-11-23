@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #8f593e, #914f3e);
+}
+.blocoTudo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    left: 83%;
+    top: -40px;
+}
+input{
+   
+    border: none;
+    border-bottom: 2px solid black;
+    width: 90%;
+    padding: 10px 20px;
+    margin: 5px;  
+    height: 20px; 
+    justify-content: center;
+    
+}
+input::placeholder {
+    color: black;         
+    font-style: italic;   
+    font-size: 15px;      
+}
+button{
+    padding: 5px 10px;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    padding: 10px 10px;
+    position: relative;
+    background-color: rgb(124, 123, 123);
+    width: 15%;
+    margin: 3px;
+    left: 3%;
+    top: 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    
+   }
+   a:hover{
+    background-color: rgb(223, 217, 217);
+    color: black ;
+   }
+   a:active{
+    color: black ;
+
+   }
+   
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    width: 30%;
+    height: 30%;
+    margin-left: 10%;
+}
+.produto{
+    width:200px;
+    height:200px;
+    overflow: hidden;  
+    border: none; 
+}
+ img {
+    width: 10vw;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 80px;
+}
+@media (max-width: 1024px) { 
+    .blocoTudo {
+        left: 50%; 
+        top: -30px;
+        transform: translateX(-50%); 
+    }
+    .leilao{
+        position: relative;
+        left: 50px;
+        top: 20px;
+    }
+    .container {
+        width: 50%;
+        margin-left: 25%; 
+    }
+    .produto {
+        width: 150px;
+        height: 150px;
+    }
+    .link1{
+        position: absolute;
+        top: 5px;
+        width: 60px;
+        left: 20px;
+        
+    }
+    .link2{
+        position: absolute;
+        top: 5px;
+        width: 55px;
+        left: 90px;
+    }
+    .link3{
+        position: absolute;
+        top: 5px;
+        width: 70px;
+        left: 18%;
+    }
+    img {
+        width: 15vw;
+        left: 0; 
+    }
+    input {
+        width: 80%; 
+    }
+    a {
+        width: 30%; 
+        left: 10%;
+        top: 20px; 
+    }
+}
+@media (max-width: 768px) { 
+    .blocoTudo {
+        left: 10%;
+        top: 10px;
+        transform: none; 
+    }
+    .container {
+        width: 80%; 
+        margin-left: 10%;
+    }
+    .produto {
+        width: 100%; 
+        height: auto;
+    }
+    img {
+        width: 50%; 
+        left: 0;
+    }
+    .leilao{
+        position: relative;
+        margin: 20px;
+        left: 40px;
+    }
+    .link1{
+        position: absolute;
+        top: 5px;
+        width: 60px;
+        left: 20px;
+    }
+    .link2{
+        position: absolute;
+        top: 5px;
+        width: 55px;
+        left: 90px;
+    }
+    .link3{
+        position: absolute;
+        top: 5px;
+        width: 72px;
+        left: 40%;
+    }
+    input {
+        width: 100%; 
+    }
+    a {
+        width: 100%; 
+        left: 0;
+        top: 10px; 
+    }
+}

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #8f593e, #914f3e);
+}
+h1{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    padding: 5px;
+}
+.lista-produto>div{
+    background-color: gray;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    border-radius: 15px;
+    height: 12vh;
+    text-align: justify;
+    color: black;
+    flex-wrap: nowrap;
+}
+.btn-Home{
+    position: absolute;
+    top: 0;
+    margin: 25px;
+    width: 6%;
+    height: 3%;
+    border-radius: 10px;
+    border: none;
+
+}
+.btn-Home>.a-Home{
+   text-decoration: none;
+}
+button:hover{
+    background-color: gray;
+}
+button:active{
+    background-color: white;
+}
+a{
+    color: black;
+}
+.btn-Carrinho{
+    position: absolute;
+    top: 0;
+    left: 7%;
+    margin: 25px;
+    width: 8%;
+    height: 3%;
+    border-radius: 10px;
+    border: none;
+    
+}
+.a-Carinho{
+    text-decoration: none;
+
+}
+@media (max-width: 768px){
+    h1{
+        font-size: 23px;
+        margin-left: 35px;
+    }
+    a{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-Home{
+        width: 40px;
+        padding: 2px;
+        margin: 5px;
+    }
+    .btn-Carrinho{
+        width: 55px;
+        margin: 5px;
+        margin-left: 25px;
+    }
+    .lista-produto>div{
+        background-color: gray;
+        height: 40%;
+    }
+    .dados{
+        margin: 10px;
+        padding: 5px;
+        height: 50%;
+        top: 30px;
+      
+    }
+    .itens{
+     
+        color: black;
+       
+    }
+}

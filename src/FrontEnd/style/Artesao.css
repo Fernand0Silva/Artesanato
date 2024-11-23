@@ -1,0 +1,410 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  
+    overflow-y: auto;    
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #8f593e, #914f3e);
+    height: 100vh; 
+}
+
+#img {
+    width: 80px;
+    height: 80px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.btns-nav {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 15px;
+    color: white;
+}
+
+.btnNave {
+    width: 107px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 253, 253);
+    color: white;
+}
+
+.btnNave>a {
+    text-decoration: none;
+}
+
+.btnNave:active {
+    background-color: #367c39;
+}
+
+.btnNave:hover {
+    background-color: rgb(173, 173, 173);
+}
+
+/* Container que agrupa o conteúdo */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blocoProduto {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+/* Inputs de texto */
+.input-Artesao, .input-Produto {
+    background-color: gray;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 90%;
+    padding: 5px;
+    margin: 10px;
+    height: 20px;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* Listagem de Artesãos e Produtos */
+#listarArtesaos{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5%;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+    top: -90px;
+    left: 20%;
+}
+#listarProdutos {
+    width: 30%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5%;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+    top: -85%;
+    left: 60%;
+}
+
+/* Formulários de Cadastro */
+#cadastroArtesaoForm{
+    width: 90%;
+    height: auto;
+    background-color: gray;
+    border: solid black;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 20px;
+    position: relative;
+    top: -80px;
+    left: -40%;
+}
+#cadastroProdutoForm{
+    background-color: gray;
+    position: absolute;
+    top: 30%;
+    border: solid black;
+    border-radius: 20px;
+    left: 60%;
+    padding: 20px;
+    width: 30%;
+}
+
+/* Botões */
+.btn-artesao{
+    background-color: #8f593e;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 20px;
+}
+.btn-Produto {
+    background-color: #8f593e;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 60%;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 50px;
+   
+}
+
+.btn-artesao:hover, .btn-Produto:hover {
+    background-color: #b37161;
+}
+
+.btn-artesao:active, .btn-Produto:active {
+    background-color: #b37161;
+}
+@media (max-width: 768px) {
+   button{
+    color: white;
+   }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+   
+    #cadastroArtesaoForm {
+        width: 75%;
+        margin: 20px auto; 
+        border-radius: 20px;
+        padding: 20px;
+        background-color: gray;
+        position: relative; 
+        left:-5px;
+        top: -20px;
+    }
+
+    .blocoProduto {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px; 
+    }
+
+    #cadastroProdutoForm {
+        width: 75%;
+        margin: 20px auto;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: gray;
+        position: relative;
+        top: -80px;
+        left: 1px;
+    }
+    #listarProdutos {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 0px;
+        position: relative;
+        top: -10%;
+        left: -3px;
+    }
+
+   
+    .btn-artesao {
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: #975747;
+        width: 80%;
+        margin-left: 10%;
+        display: block;
+        margin-top: 15px;
+        color: white;
+    }
+
+    .btn-Produto {
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: #975747;
+        width: 80%;
+        margin-left: 10%;
+        display: block;
+        margin-top: 15px;
+    }
+
+ 
+    #listarArtesaos{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        left: 5px;
+        border-radius: 20px;
+    }
+   
+    
+    .btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+    .input-Artesao, .input-Produto {
+        background-color: gray;
+        border: none;
+        border-bottom: 2px solid black;
+        width: 90%;
+        padding: 5px;
+        margin: 10px;
+        color: white;
+    }
+
+    input::placeholder {
+        color: white;
+        font-style: italic;
+        font-size: 15px;
+    }
+
+  
+    #img {
+        width: 60px;
+        height: 60px;
+        margin: 10px auto;
+    }
+    .btnNave{
+        color: white;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+   
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+    }
+
+   
+    #cadastroArtesaoForm {
+        width: 70%;
+        margin: 30px auto;
+        border-radius: 20px;
+        padding: 25px;
+        background-color: gray; 
+        position: relative;
+        top: -40px;
+        left: 30px;
+    }
+
+    
+    .blocoProduto {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+   
+    #cadastroProdutoForm {
+        width: 70%;
+        margin: 30px auto;
+        border-radius: 20px;
+        padding: 25px;
+        background-color: gray;
+        position: relative;
+        top: -50px;
+        left: 40px;
+    }
+
+    #listarProdutos {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 10px;
+        position: relative;
+        top: -5%;
+        left: 40px;
+    }
+
+    
+    .btn-artesao, .btn-Produto {
+        padding: 15px 30px;
+        margin: 10px auto;
+        background-color: #975747;
+        width: 70%;
+        display: block;
+        margin-top: 20px;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 20px;
+
+    }
+
+
+    #listarArtesaos {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+       
+        border-radius: 20px;
+        left: 3px;
+    }
+
+    
+    .btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 25px;
+        border-radius: 20px;
+    }
+
+
+    .input-Artesao, .input-Produto {
+        background-color: gray;
+        border: none;
+        border-bottom: 2px solid #fff;
+        width: 80%;
+        padding: 12px;
+        margin: 15px 0;
+        color: white;
+        font-size: 18px;
+    }
+
+    input::placeholder {
+        color: #ccc;
+        font-style: italic;
+        font-size: 16px;
+    }
+
+    
+    #img {
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+    }
+}
+

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #8f593e, #914f3e);
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h3 {
+    position: relative;
+    left: 50%;
+}
+
+div#produtosDetalhes {
+    position: relative;
+    left: 50%;
+}
+
+.produto-Pesquisado {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    left: 20%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(207, 204, 204);
+}
+
+.btn-Comprar {
+    border: none;
+    padding: 10px 10px;
+    width: 45px;
+    position: relative;
+    left: 33%;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.btn-Comprar:hover {
+    background-color: rgb(13, 184, 13);
+    color: white;
+}
+
+.btn-Comprar:active {
+ 
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 10px;
+    position: relative;
+    background-color: gray;
+    width: 5%;
+    margin: 3px;
+    left: 1%;
+    top: -40px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px; 
+    }
+
+    .produto-Pesquisado {
+        width: 90%; 
+        left: 5%; 
+    }
+
+    .btn-Comprar {
+        width: 60%; 
+        left: 20%; 
+    }
+
+    .links {
+        width: 30%; 
+        left: 20%; 
+        top: -10px; 
+    }
+}
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 35px; 
+    }
+
+    .produto-Pesquisado {
+        width: 80%; 
+        left: 10%; 
+    }
+    .btn-Comprar {
+        width: 40%; 
+        left: 30%; 
+    }
+
+    .links {
+        width: 30%; 
+        left: 10%; 
+        top: -10px; 
+    }
+}
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 40px;
+    }
+    .produto-Pesquisado {
+        width: 50%; 
+        left: 25%; 
+    }
+    .btn-Comprar {
+        width: 30%; 
+        left: 33%; 
+    }
+    a {
+        width: 5%; 
+        left: 1%; 
+        top: -40px; 
+    }
+}

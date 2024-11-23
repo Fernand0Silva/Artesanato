@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #8f593e, #914f3e);
+
+}
+.produto-detalhes {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px; 
+    margin: 20px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: rgb(218, 209, 209);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+.btn-Comprar{
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+.btn-Comprar:hover{
+    background-color: rgb(13, 179, 13);
+    color: #fff;
+}
+
+.produto-detalhesPesquisado {
+    background-color: #007bff;
+    color: white;
+}
+#searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    padding: 2px;
+    margin: 3px;
+    color: white;
+}
+h1{
+    padding: 3px;
+}
+
+#searchQuery {
+    width: 100%;
+    max-width: 400px; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+#btnPesquisa {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+#listarProdutos, #results {
+    padding: 20px;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .produto-detalhes {
+        width: 90%; 
+    }
+    #searchQuery {
+        width: 80%;
+    }
+
+    #btnPesquisa {
+        width: 40px; 
+        height: 40px;
+    }
+    img {
+        width: 25px;
+        height: 25px;
+    }
+    #searchForm {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    h1{
+        position: relative;
+        top: 45px;
+    }
+    a{
+        position: relative;
+        top: 30px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+@media (max-width: 1024px) {
+    .produto-detalhes {
+        width: 70%;
+    }
+    #searchQuery {
+        width: 70%;
+    }
+    #btnPesquisa {
+        width: 35px;
+        height: 35px;
+    }
+    img {
+        width: 28px;
+        height: 28px;
+    }
+}
+@media (min-width: 1025px) {
+    .produto-detalhes {
+        width: 50%; 
+    }
+}
+    #searchQuery {
+        width: 300px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        position: absolute;
+        top: 30px;
+    }
+    #btnPesquisa {
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        background-color:#fff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 32px;
+        left: 57%;
+    }
+    img{
+        width: 30px;
+        height: 30px; 
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+   

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style/Artesao.css">
+   <link rel="stylesheet" href="./Resposive/ArtesaoRes.css">
+  
+    <title>Artesao</title>
+</head>
+<body>
+    <div class="bloco">
+        <img id="img" src="img/logo_4_Transparente.png" alt="" >
+    </div>
+    <div class="btns-nav">
+        <button class="btnNave"><a href="leilao.html">Leilão</a></button>
+        <button class="btnNave"><a href="MeusProdutos.html">Meus Produtos</a></button>
+        <button class="btnNave"><a href="DadosArtesao.html">Meus Dados</a></button>
+    </div>
+    <div class="container">
+        <form id="cadastroArtesaoForm">
+            <h1>Seu Perfil</h1>
+            <h2>Cadastro Artesão</h2>
+          
+            <input type="text" id="nome" placeholder="nome EX: José" required class="input-Artesao"> <br>
+           
+            <input type="text" id="cidade" placeholder="cidade EX: São Paulo" required class="input-Artesao"> <br>
+            
+            <input type="text" id="rg" placeholder="Rg EX: 56.473.211-x" required class="input-Artesao"> <br>
+           
+            <input type="text" id="cpf" placeholder="CPF EX: 543.324.247-09" required class="input-Artesao"> <br>
+            
+            <input type="email" id="email" placeholder="Email EX: joseArtesanato@gmail.com " required class="input-Artesao"> <br>
+           
+            <input type="number" id="telefone" placeholder="telefone EX: 11984417588" required class="input-Artesao"> <br>
+           
+            <input type="text" id="endereco" placeholder="Endereço EX: Rua dos Três Irmãos, 145, Bairro Jardim" required class="input-Artesao"> <br>
+            
+            <input type="number" id="idade" placeholder="Idade Ex: 33" required class="input-Artesao"> <br>
+
+            <div class="btns">
+                <input type="submit" class="btn-artesao" value="Cadastrar Dados" id="cadastroProduto"> <br>
+                <input type="button" class="btn-artesao" value="Listar Dados" id="listarDados" onclick="listarUltimoArtesao()"> <br>
+                <input type="button" class="btn-artesao" value="Atualizar Dados" id="atualizarArtesao"> <br>
+                <input type="button" class="btn-artesao" value="Deletar Dados" id="deletarDados">
+            </div>
+        </form>
+    </div>
+    <div  id="listarArtesaos" style="height: 65%;">
+
+    </div>
+    <div class="blocoProduto">
+        <form id="cadastroProdutoForm" >
+            <h1>Cadastro Produto</h1>
+           
+            <input id="Nome" type="text" required class="input-Produto" placeholder="Nome do Produto"> <br>
+
+            <input id="Descricao" type="text" required class="input-Produto" placeholder="Descrição"> <br>
+
+           <!-- <label for="Imagem">Imagem</label> <br>
+            <input id="Imagem" type="file" name="Imagem" accept="image/*" required class="input-Produto"> <br>-->
+
+            <input id="Preco" type="number" required class="input-Produto"  placeholder="Preço Ex: 99.99"> <br>
+
+            <div class="btnsProduto">
+                <input type="submit" value="Cadastrar Produto" class="btn-Produto">
+                <input type="button" value="Listar Produto" id="listarDados" onclick="listarUltimoProduto()" class="btn-Produto">
+                <input type="button" value="Atualizar Produto" id="atualizarProduto" class="btn-Produto">
+                <input type="button" value="Deletar Produto" id="deletarProdutos" class="btn-Produto">
+            </div>
+        </form>
+
+       <!-- <form enctype="multipart/form-data" method="post" action="http://localhost:3000/upload">
+            <label >Imagem</label> <br>
+            <input id="Imagem" type="file" name="imagem"  accept="image/*" required> 
+            <input type="submit" value="Enviar">
+        </form>-->
+    </div>
+    <div  id="listarProdutos">
+
+    </div>
+    <script src="./js/Artesao.js">
+        
+    </script>
+</body>
+</html>
