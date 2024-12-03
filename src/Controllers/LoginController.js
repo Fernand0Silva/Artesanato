@@ -14,18 +14,18 @@ async function fazerLogin(req, res) {
         const resultado = await verificarCredenciais(Telefone, Senha);
         
         if (resultado.auth) {
-            // Armazenar o token no cookie
+           
             res.cookie('token', resultado.token, {
                  httpOnly: true,
-                 secure: false,      // Use `true` se estiver usando HTTPS
-                 sameSite: 'lax',    // Controla o compartilhamento de cookies em cross-site requests
+                 secure: false,      
+                 sameSite: 'lax',   
                  maxAge: 3600000     // Tempo de vida do cookie em milissegundos (1 hora aqui)
                  });// Define o cookie JWT
         //retorna o token jwt na resposta
             res.status(200).json
             ({message:'Login realizado com sucesso!',
-              token: resultado.token // inclui o tiken na resposta
-            });//token:resultado.token
+              token: resultado.token 
+            });
         } else {
             res.status(401).send('Telefone ou Senha incorretos');
         }
@@ -53,10 +53,7 @@ async function buscarDados(req, res) {
         res.status(500).json({ error: 'Erro ao buscar dados.' });
     }
 }
-//===================================
 
-
-//=========
 async function getlistarDados(req, res) {
         try {
             const cadastro = await listarDados();
@@ -67,4 +64,4 @@ async function getlistarDados(req, res) {
         }
     }
 
-module.exports = { fazerLogin, buscarDados,getlistarDados,}; // Adicione buscarDados aqui
+module.exports = { fazerLogin, buscarDados,getlistarDados,}; 

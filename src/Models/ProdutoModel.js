@@ -1,8 +1,8 @@
 const { sql } = require('../Database/BdConfig');
 
 async function listarProdutos() {
-    const pool = await sql.connect();  // Conexão com o banco de dados
-    const data = await pool.request().query('SELECT * FROM tbl_Produto'); // Executa a query SQL
+    const pool = await sql.connect(); 
+    const data = await pool.request().query('SELECT * FROM tbl_Produto'); 
     return data.recordset;  // Retorna os dados
 }
 

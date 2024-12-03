@@ -56,7 +56,7 @@ async function carregarProdutos() {
 // Carregar produtos ao abrir a página
 window.onload = carregarProdutos;
 
-// Função para adicionar ao carrinho
+
 function adicionarAoCarrinho(nome, descricao, preco) {
 const produto = { nome, descricao, preco };
 carrinho.push(produto);

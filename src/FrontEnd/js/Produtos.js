@@ -1,6 +1,4 @@
 let debounceTimeout;
-
-        // Função para listar produtos quando a página carrega
         async function listarProdutos() {
             try {
                 const response = await fetch('http://localhost:3000/Produto', {
@@ -107,15 +105,6 @@ let debounceTimeout;
         const searchForm = document.getElementById('searchForm');
         searchForm.addEventListener('submit', buscarProdutos);
        
-        // Carrinho
-//let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-
-// Função para atualizar o localStorage
-//function atualizarCarrinho() {
-  //  localStorage.setItem('carrinho', JSON.stringify(carrinho));
-//}
-
-// Função para adicionar ao carrinho
 function adicionarAoCarrinho(nome, descricao, preco) {
     const produto = { nome, descricao, preco };
     carrinho.push(produto);

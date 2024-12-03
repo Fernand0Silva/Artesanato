@@ -20,7 +20,7 @@ async function inserirArtesao(req, res) {
     }
 
     try {
-        //console.log("Tentando inserir artesão...");
+      
       const novoId =   await criarArtesao(Nome, Cidade, Rg, Cpf, Email, Telefone, Endereco, Idade);
         res.status(201).send(`Artesão inserido com sucesso! ID: ${novoId}`);
     } catch (err) {
@@ -44,7 +44,7 @@ async function listarArtesaoPorIdHandler(req, res) {
 }
 
 async function atualizarArtesaoHandler(req, res) {
-    const id = parseInt(req.params.id); // Pega o ID da URL
+    const id = parseInt(req.params.id);
     const { Nome, Cidade, Rg, Cpf, Email, Telefone, Endereco, Idade } = req.body;
 
 

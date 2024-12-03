@@ -15,7 +15,7 @@ async function verificarCredenciais(Telefone, Senha) {
 
         //gerar o token jwt
         const token = jwt.sign(
-            { id:user.id, Telefone:user.Telefone},//Payload
+            { id:user.id, Telefone:user.Telefone},
             'secreta_key',//Chave secreta
             {expiresIn: '1h'}//Expiração do token
         );

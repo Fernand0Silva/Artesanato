@@ -26,7 +26,6 @@ async function getProdutos(req, res) {
 }
 async function inserirProduto (req,res){
     const {Nome,Descricao,Preco} = req.body;
-    //const Imagem = req.file ? req.file.filename : null; // Captura o nome da imagem do req.file
     if (!Nome || !Descricao || !Preco   ) {
         return res.status(400).send('Nome, Descricao,Imagem ou  Preço ausentes');
     }
@@ -65,8 +64,7 @@ async function listarProdutoPorIdHandler(req, res) {
 }
 async function atualizarProdutoHandler(req, res) {
     const id = parseInt(req.params.id); // Pega o ID da URL
-    const { Nome,Descricao,Preco,Imagem } = req.body;
-    //const imagem = req.fole? req.file.path:null;
+    const { Nome,Descricao,Preco } = req.body;
 
 
     if (!id) {
@@ -79,7 +77,7 @@ async function atualizarProdutoHandler(req, res) {
     }
 
     try {
-        const rowsAffected = await atualizarProduto(id, Nome, Descricao, Preco, Imagem);
+        const rowsAffected = await atualizarProduto(id, Nome, Descricao, Preco);
         
         if (rowsAffected === 0) {
             return res.status(404).send('Produto não encontrado');

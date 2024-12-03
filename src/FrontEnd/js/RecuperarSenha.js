@@ -1,7 +1,6 @@
-// Função para buscar usuário quando o formulário for enviado
 async function buscarUsuario(event) {
-    event.preventDefault(); // Previne o comportamento padrão do form (recarregar a página)
-    const searchQuery = document.getElementById('searchQuery').value; // Pegamos o valor digitado
+    event.preventDefault(); 
+    const searchQuery = document.getElementById('searchQuery').value; 
      
     if (!searchQuery) {
         alert('Digite o número de telefone que cadastrou para pesquisar!');
@@ -41,7 +40,6 @@ async function buscarUsuario(event) {
         alert('Erro ao buscar o usuário!');
     }
 }
-
 // Adicionar evento ao formulário de pesquisa
 const searchForm = document.getElementById('searchForm');
 searchForm.addEventListener('submit', buscarUsuario);

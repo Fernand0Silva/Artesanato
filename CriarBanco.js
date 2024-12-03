@@ -1,6 +1,6 @@
 
 /*
-create database Artesanato
+create database Atelie
 
 =========================
 
@@ -8,8 +8,10 @@ create database Artesanato
  Id int Identity(1,1) Primary Key,
  Nome varchar(100),
  Descricao varchar(100),
- Imagem VARCHAR(255),
- Preco money ); 
+ Preco money 
+ ); 
+ 
+  Imagem VARCHAR(255),
  --ImagemURL NVARCHAR(255)  -- Coluna para armazenar a URL da imagem --Imagem  VARBINARY (MAX),
 );
 

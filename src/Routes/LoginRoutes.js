@@ -3,7 +3,7 @@ const { fazerLogin,buscarDados,getlistarDados} = require('../Controllers/LoginCo
 const router = express.Router();
 
 router.post('/', fazerLogin);
-router.post('/buscarDados',buscarDados); // Nova rota
-router.get('/',getlistarDados); // Nova rota
+router.post('/buscarDados',buscarDados); 
+router.get('/',getlistarDados); 
 
 module.exports = router;

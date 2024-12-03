@@ -1,5 +1,3 @@
-// Routes/ProdutoRoutes.js
-
 const express = require('express');
 const { getArtesaos,inserirArtesao,listarArtesaoPorIdHandler,atualizarArtesaoHandler,deletarArtesao } = require('../Controllers/ArtesaoController');
 const router = express.Router();

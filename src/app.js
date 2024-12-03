@@ -1,13 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 const sql = require('mssql');
-//const { conectarBanco } = require('./Database/BdConfig');
+const { conectarBanco } = require('./Database/BdConfig');
 const jwt = require('jsonwebtoken');
 const multer= require('multer');
 const path = require('path');
 const Pool = require('pg');
 const {storage} = require('./multerConfig');
 
+//12345678
+/*workstation id=artesanato.mssql.somee.com;packet size=4096;user id=saluizfernando;pwd=12345678;data source=artesanato.mssql.somee.com;persist security info=False;initial catalog=artesanato;TrustServerCertificate=True*/
 
 const produtoRoutes = require('./Routes/ProdutoRoutes');
 const artesaoRoutes = require('./Routes/ArtesaoRoutes');
@@ -17,8 +19,8 @@ const bodyParser = require('body-parser');
 const pesquisaRoutes = require('./Routes/PesquisaRoutes');
 
 const app = express();
-//const port = 3000;
-const port = 5432;
+const port = 3000;
+//const port = 5432;
 
 app.use(express.json());
 app.use(bodyParser.json());
@@ -47,8 +49,6 @@ app.post("/uploads", upload.single('imagem'), async (req, res) => {
     });
 });
 
-
-// Inicia a conexão ao banco de dados
 //conectarBanco();
 
 // Rotas
@@ -66,7 +66,6 @@ app.get('/search', async (req, res) => {
     }
 
     try {
-        // Certifique-se de que a consulta SQL está correta
         const result = await sql.query`
             SELECT * FROM tbl_Produto WHERE Nome LIKE ${'%' + query + '%'}
         `;
@@ -81,7 +80,6 @@ app.get('/search', async (req, res) => {
         res.status(500).send(`Erro no servidor: ${error.message}`); // Envia o erro detalhado para o cliente
     }
 });
-
 
 app.post('/recuperar', async (req, res) => {
     const { telefone } = req.body;
@@ -102,10 +100,8 @@ app.post('/recuperar', async (req, res) => {
     }
 });
 
-
-
 app.get('/', (req, res) => {
-    return res.json('Servidor Iniciado com Sucesso :)');
+    return res.json('Servidor   Iniciado com Sucesso :)');
 });
 
 app.listen(port, () => {

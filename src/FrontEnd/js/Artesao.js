@@ -86,11 +86,9 @@ console.error('Erro:', error);
 alert('Erro ao buscar os dados!');
 }
 }
-
 //atualizar artesao
 document.getElementById('atualizarArtesao').addEventListener('click', async function(event){
 event.preventDefault();
-
 const idArtesao = prompt("Digite o Id ");
 const novoNome = prompt("Digite o nome do artesão ");
 const novaCidade = prompt("Digite  a sua cidade");
@@ -197,59 +195,6 @@ document.getElementById('cadastroProdutoForm').addEventListener('submit',async f
     }
 });
 
-/*const formData = new FormData(this); // Captura todos os dados do formulário, incluindo a imagem
-
-try {
-const response = await fetch('http://localhost:3000/Produto', { // Ajuste a URL conforme necessário
-method: 'POST',
-body: formData // Envia o FormData diretamente
-});
-
-if (response.ok) {
-alert('Dados cadastrados com sucesso!');
-let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
-const produto = {
-    Nome: document.getElementById('Nome').value,
-    Descricao: document.getElementById('Descricao').value,
-    Preco: document.getElementById('Preco').value,
-    // Imagem não é necessário armazenar aqui, pois o upload já foi feito
-};
-produtos.push(produto);
-localStorage.setItem('produtos', JSON.stringify(produtos));
-console.log(produtos);
-
-window.location.href = 'MeusProdutos.html'; 
-// window.location.href = 'Compras.html'; // Redirecionar, se necessário
-} else {
-alert('Erro ao cadastrar os dados!');
-}
-} catch (error) {
-console.error('Erro:', error);
-alert('Erro ao enviar os dados!');
-}
-
-
- // Cria um novo FormData
- //const formData = new FormData(this); // `this` se refere ao formulário
-
-/*try {
-const response = await fetch('http://localhost:3000/Produto', {
-method: 'POST',
-body: formData // Envia o FormData com os dados do formulário e a imagem
-});
-
-if (response.ok) {
-alert('Dados cadastrados com sucesso!');
-// Aqui você pode adicionar a lógica para armazenar os produtos localmente se necessário
-window.location.href = 'MeusProdutos.html'; 
-} else {
-alert('Erro ao cadastrar os dados!');
-}
-} catch (error) {
-console.error('Erro:', error);
-alert('Erro ao enviar os dados!');
-}*/
-
 async function listarUltimoProduto() {
 try {
 const response = await fetch('http://localhost:3000/Produto', {
@@ -300,10 +245,10 @@ event.preventDefault();
 const idProduto = prompt("Digite o Id ");
 const novoNome = prompt("Digite o nome do produto ");
 const novaDescricao = prompt("Digite uma descrição ");
-const novaImagem = prompt("Inserir Nova imagem ");
+//const novaImagem = prompt("Inserir Nova imagem ");
 const novoPreco = prompt("Digite o preço  ");
 
-if(idProduto && novoNome && novaDescricao && novoPreco && novaImagem){
+if(idProduto && novoNome && novaDescricao && novoPreco){
 try{
 const response = await fetch(`http://localhost:3000/Produto/${idProduto}`,{
     method :'PUT',
@@ -313,7 +258,6 @@ const response = await fetch(`http://localhost:3000/Produto/${idProduto}`,{
     body: JSON.stringify({
         Nome: novoNome,
         Descricao:novaDescricao,
-        Imagem:novaImagem,
         Preco: novoPreco
     })
 });
@@ -352,11 +296,11 @@ try {
         localStorage.setItem('produtos', JSON.stringify(produtos));
         atualizarCarrinho();
     } else {
-        alert('Erro ao deletar os dados!');
+    alert('Erro ao deletar os dados!');
     }
 } catch (error) {
     console.error('Erro:', error);
-    alert('Erro ao deletar os dados!');
+    //alert('Erro ao deletar os dados!');
 }
 } else {
 alert('ID do produto é necessário para deletar.');
